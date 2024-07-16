@@ -1,0 +1,62 @@
+.order-updates__container {
+  font-family: Poppins;
+  text-decoration: none;
+  color: black;
+
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 10px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  .order-updates__img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 150px;
+      height: 124px;
+      border-radius: 20px;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+  }
+
+  .order-updates-text-container {
+    padding: 0 16px;
+    text-align: start;
+
+    .order-updates__title,
+    .order-updates__status {
+      color: #707070;
+    }
+
+    .order-updates__status {
+      &.delivered {
+        color: #5cb85c;
+      }
+      &.pending {
+        color: black;
+      }
+    }
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    width: 496px;
+
+    .order-updates__img-container {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
