@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import { Link } from "react-router-dom";
-import OrderUpdateItem from "./OrderUpdateItem";
+import OrderUpdateItem from "../OrderUpdateItem";
 import "./OrderUpdates.scss";
 import { mockOrders } from "./orderUpdates.config";
 

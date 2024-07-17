@@ -11,6 +11,16 @@
   outline: none;
   border: none;
   cursor: pointer;
+  transition: transform 0.5s ease;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: #f0f0f0;
+
+    img {
+      transform: scale(0.8);
+    }
+  }
 
   .order-updates__img-container {
     display: flex;
@@ -23,6 +33,7 @@
       flex: none;
       order: 0;
       flex-grow: 0;
+      transition: transform 0.5s ease;
     }
   }
 

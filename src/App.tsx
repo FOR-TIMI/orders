@@ -2,13 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import "./index.css";
+import OneOrderPage from "./pages/OneOrderPage";
 
 const App = () => (
   <div className="container">
-    <div>Name: orders</div>
-    <div>Framework: react</div>
-    <div>Language: TypeScript</div>
-    <div>CSS: Empty CSS</div>
+    <OneOrderPage />
   </div>
 );
 const rootElement = document.getElementById("app");

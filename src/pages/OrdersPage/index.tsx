@@ -1,18 +1,13 @@
 import React, { useMemo } from "react";
+import OrderUpdateItem from "../../components/OrderUpdateItem";
 import { mockOrders } from "../../components/orderUpdates/orderUpdates.config";
 import "./OrdersPage.scss";
 
 const OrdersPage = () => {
   const orders = useMemo(() => {
-    return mockOrders.map(({ desc, id, imgSrc, productId, status }, idx) => (
-      <div className="ordersPage__order" key={id + idx + productId}>
-        <div className="ordersPage__order-img-container">
-          <img src={imgSrc} alt={desc} />
-        </div>
-        <div className="ordersPage__order-text-container">
-          <p className="ordersPage__order-desc">{desc}</p>
-          <p className="ordersPage__order-status">{status}</p>
-        </div>
+    return mockOrders.map((order, idx) => (
+      <div key={order.id + idx} className="orders-page__order">
+        <OrderUpdateItem order={order} />
       </div>
     ));
   }, []);

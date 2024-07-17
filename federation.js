@@ -1,6 +1,10 @@
 const GITHUB_ORG = "FOR-TIMI";
 
-const exposes = ["./src/components/orderUpdates", "./src/pages/OrdersPage"];
+const exposes = [
+  "./src/components/orderUpdates",
+  "./src/pages/OrdersPage",
+  "./src/pages/OneOrderPage",
+];
 
 const projects = {
   container: { port: 3000 },
